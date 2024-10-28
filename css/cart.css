@@ -6,8 +6,9 @@
    --red:tomato;
    --orange:orange;
    --black:#333;
-   --dark-black:black;
    --white:#fff;
+   --green:green;
+   --dark-black:black;
    --bg-color:#eee;
    --dark-bg:rgba(0,0,0,.7);
    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
@@ -28,43 +29,72 @@ html{
    overflow-x: hidden;
 }
 
-.message{
-    background-color: var(--blue);
-    position: sticky;
-    top:0; left:0;
-    z-index: 10000;
-    border-radius: .5rem;
-    background-color: var(--white);
-    padding:1.5rem 2rem;
-    margin:0 auto;
-    max-width: 1200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap:1.5rem;
+
+
+/* ===============[CSS "CART"]=============== */
+.shopping-cart table{
+    text-align: center;
+    width: 100%;
 }
  
-.message span{
+.shopping-cart table thead th{
+    padding:1.5rem;
+    font-size: 2rem;
+    color:var(--white);
+    background-color: var(--black);
+}
+ 
+.shopping-cart table tr td{
+    border-bottom: var(--border);
+    padding:1.5rem;
     font-size: 2rem;
     color:var(--black);
 }
  
-.message i{
-    font-size: 2.5rem;
+.shopping-cart table input[type="number"]{
+    border: var(--border);
+    padding:1rem 2rem;
+    font-size: 2rem;
     color:var(--black);
+    width: 10rem;
+}
+ 
+.shopping-cart table input[type="submit"]{
+    padding:.5rem 1.5rem;
     cursor: pointer;
+    font-size: 2rem;
+    background-color: var(--orange);
+    color:var(--white);
 }
  
-.message i:hover{
-    color:var(--red);
+.shopping-cart table input[type="submit"]:hover{
+    background-color: var(--black);
 }
  
+.shopping-cart table .table-bottom{
+    background-color: var(--bg-color);
+}
+ 
+.shopping-cart .checkout-btn{
+    text-align: center;
+    margin-top: 1rem;
+}
+ 
+.shopping-cart .checkout-btn a{
+    display: inline-block;
+    width: auto;
+}
+ 
+.shopping-cart .checkout-btn a.disabled{
+    pointer-events: none;
+    opacity: .5;
+    user-select: none;
+    background-color: var(--red);
+}
 
 
 
-
-
-
+/* ===============[CSS "HEADING"]=============== */
 .heading{
     text-align: center;
     font-size: 3.5rem;
@@ -73,63 +103,11 @@ html{
     margin-bottom: 2rem;
 }
 
-
-
-.products .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 35rem);
-    gap:1.5rem;
-    justify-content: center;
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+    /* padding-bottom: 5rem; */
 }
- 
-.products .box-container .box{
-    text-align: center;
-    padding:2rem;
-    box-shadow: var(--box-shadow);
-    border:var(--border);
-    border-radius: .5rem;
-}
- 
-.products .box-container .box img{
-    height: 25rem;
-}
- 
-.products .box-container .box h3{
-    margin:1rem 0;
-    font-size: 2.5rem;
-    color:var(--black);
-}
- 
-.products .box-container .box .price{
-    font-size: 2.5rem;
-    color:var(--black);
-}
-
-
-
-
-
-.btn,
-.option-btn,
-.delete-btn{
-   display: block;
-   width: 100%;
-   text-align: center;
-   background-color: var(--blue);
-   color:var(--white);
-   font-size: 1.7rem;
-   padding:1.2rem 3rem;
-   border-radius: .5rem;
-   cursor: pointer;
-   margin-top: 1rem;
-}
-
-
-
-
-
-
-
 
 
 /* ===============[CSS "NAVBAR"]=============== */
@@ -192,9 +170,55 @@ html{
 
 
 
+
+
+/* Bagian Input Button */
+.btn,
+.option-btn,
+/* Delete Button */
+.delete-btn{
+   display: block;
+   width: 100%;
+   text-align: center;
+   background-color: var(--blue);
+   color:var(--white);
+   font-size: 1.3rem;
+   padding:1.2rem 3rem;
+   border-radius: .5rem;
+   cursor: pointer;
+   margin-top: 1rem;
+}
+
+/* Delete Button hover (Jika cursor diarahkan) */
+.btn:hover,
+.option-btn:hover,
+.delete-btn:hover{
+   background-color: var(--black);
+}
+
+.delete-btn{
+    margin-top: 0;
+    background-color: var(--red);
+}
+
+.option-btn{
+    background-color: var(--orange);
+}
+
+
+
+/* Layout CART  */
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+    /* padding-bottom: 5rem; */
+}
+
+
+
 /* ============(FOOTER)============  */
 .container-footer{
-	max-width: 1170px;
+    max-width: 1170px;
 	margin:auto;
 }
 
@@ -272,8 +296,8 @@ ul{
 
 
 
-/* media queries (Untuk Web-nya Lentur)  */
 
+/* media queries (Untuk Web-nya Lentur)  */
 @media (max-width:1200px){
 
     .shopping-cart{
@@ -367,9 +391,10 @@ ul{
       width: 50%;
       margin-bottom: 30px;
   }
-  }
-  @media(max-width: 574px){
+}
+
+@media(max-width: 574px){
     .footer-col{
       width: 100%;
   }
-  }
+}
