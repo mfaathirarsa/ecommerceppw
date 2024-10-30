@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+/* setup */
+:root{
+   --blue:#2980b9;
+   --red:tomato;
+   --orange:orange;
+   --black:#333;
+   --dark-black:black;
+   --white:#fff;
+   --bg-color:#eee;
+   --dark-bg:rgba(0,0,0,.7);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+   --border:.1rem solid #999;
+}
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.container {
+    border: 1px solid black;
+    width: 100%;
+    height: max-content;
+}
+
+tr td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    height: 500px;
+}
+
+.left{
+    width: 300px;
+    background-color: black;
+}
+
+.right{
+    width: 950px;
+}
+
+.toko {
+    margin-top: -25px;
+    margin-left: 35px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.storeName {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600px;
+    color: rgb(255, 255, 255);
+    margin-left: 8px;
+    margin-top: 20px;
+}
+
+.loc {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.alamat{
+    height: 30px;
+    background-color: black;
+    color: white;
+    margin: auto;
+    padding-top: 10px;
+    display: flex;
+}
+
+.blank{
+    width: 10px;
+    height: 20px;
+}
+
+.mainFeature{
+    margin-top: 10px;
+}
+
+.tableFeature {
+    width: 310px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.img{
+    width: 150px;
+    height: 150px;
+    margin-top: -10px;
+    margin-left: 40px;
+}
+
+.addFeature{
+    width: 468px;
+    height: 70px;
+    border: 1px solid black;
+}
+
+.add{
+    display: flex;
+}
+
+.imgAdd{
+    width: 30px;
+    height: 30x;
+    margin-left: 180px;
+}
+
+.view{
+    margin-left: 10px;
+    padding-top: 7px;
+}
+
+.descAdd{
+    margin-left: 218px;
+}
+
+/* ===============[CSS "NAVBAR"]=============== */
+.header{
+    background-color: var(--dark-black);
+    position: sticky;
+    top:0; left:0;
+    z-index: 1000;
+}
+
+.header .flex{
+    display: flex;
+    align-items: center;
+    padding:1.5rem 2rem;
+    max-width: 1200px;
+    margin:0 auto;
+}
+ 
+.header .flex .logo{
+    margin-right: auto;
+    font-size: 2.5rem;
+    color:var(--white);
+}
+ 
+.header .flex .navbar a{
+    margin-left: 2rem;
+    font-size: 2rem;
+    color:var(--white);
+}
+ 
+.header .flex .navbar a:hover{
+    color:yellow;
+}
+ 
+.header .flex .cart{
+    margin-left: 2rem;
+    font-size: 2rem;
+    color:var(--white);
+}
+ 
+.header .flex .cart:hover{
+    color:yellow;
+}
+ 
+.header .flex .cart span{
+    padding:.1rem .5rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    color:var(--blue);
+    font-size: 2rem;
+}
+
+#menu-btn{
+    margin-left: 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    color:var(--white);
+    display: none;
+}
