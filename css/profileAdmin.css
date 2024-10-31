@@ -80,6 +80,7 @@ tr td {
     margin: auto;
     padding-top: 10px;
     display: flex;
+    margin-top: -181px;
 }
 
 .blank{
