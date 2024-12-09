@@ -43,7 +43,7 @@ if(isset($_GET['delete_all'])){
 <body>
 
 <!-- ==========[BUAT NAMPILAN NAVBAR dari (header.php)]========== -->
-<?php include 'header.php'; ?>
+<?php include 'header4.php'; ?>
 
 <div class="container">
 
@@ -92,7 +92,7 @@ if(isset($_GET['delete_all'])){
          };
          ?>
          <tr class="table-bottom">
-            <td><a href="products.php" class="option-btn" style="margin-top: 0;">continue shopping</a></td>
+            <td><a href="user_page.php" class="option-btn" style="margin-top: 0;">continue shopping</a></td>
             <td colspan="3">total barang</td>
             <td>Rp<?php echo $grand_total; ?>.000/-</td>
             <td><a href="cart.php?delete_all" onclick="return confirm('are you sure you want to delete all?');" class="delete-btn"> <i class="fas fa-trash"></i> delete all </a></td>
@@ -134,7 +134,7 @@ if(isset($_GET['delete_all'])){
   	 			</ul>
   	 		</div>
   	 		<div class="footer-col">
-  	 			<h4>online shop</h4>
+  	 			<h4>Dtastyum</h4>
   	 			<ul>
   	 				<li><a href="#">watch</a></li>
   	 				<li><a href="#">bag</a></li>

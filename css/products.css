@@ -5,8 +5,10 @@
    --blue:#2980b9;
    --red:tomato;
    --orange:orange;
+   --yellow:rgb(223, 138, 0);
    --black:#333;
    --dark-black:black;
+   --green:green;
    --white:#fff;
    --bg-color:#eee;
    --dark-bg:rgba(0,0,0,.7);
@@ -108,6 +110,29 @@ html{
 
 
 
+/* hover */
+.product-link {
+    display: inline-block; /* Agar link mengambil ruang yang sesuai */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: inherit; /* Warna teks mengikuti warna default */
+    transition: all 0.3s; /* Efek transisi saat hover */
+}
+
+.product-link:hover {
+    border: 2px solid hsl(0, 0%, 0%); /* Border saat hover */
+    background-color: hsla(0, 0%, 53%, 0.436); /* Warna latar belakang saat hover */
+    border-radius: 5px; /* Sudut yang membulat untuk border */
+    padding: 5px; /* Memberikan ruang antara teks dan border */
+}
+
+
+
+
+
+
+
+
+
 
 .btn,
 .option-btn,
@@ -115,7 +140,7 @@ html{
    display: block;
    width: 100%;
    text-align: center;
-   background-color: var(--blue);
+   background-color: var(--yellow);
    color:var(--white);
    font-size: 1.7rem;
    padding:1.2rem 3rem;
@@ -123,6 +148,13 @@ html{
    cursor: pointer;
    margin-top: 1rem;
 }
+
+.btn:hover,
+.option-btn:hover,
+.delete-btn:hover{
+   background-color: var(--black);
+}
+
 
 
 
@@ -265,6 +297,51 @@ ul{
 	color: #24262b;
 	background-color: #ffffff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Banner Iklan */
+.banner-ad {
+    max-width: 1450px;
+    margin: 5px auto 20px; /* Jarak atas kecil agar lebih dekat dengan navbar */
+    text-align: center;
+    padding: 0;
+}
+
+.banner-ad img {
+    width: 100%;
+    max-height: 300px; /* Sesuaikan tinggi maksimal sesuai preferensi Anda */
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+/* MLOGO D */
+.logo {
+    display: flex; /* Menggunakan flexbox */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+}
+
+
+
+
+
+
+
+
+
 
 
 

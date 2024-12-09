@@ -7,7 +7,7 @@
    --orange:orange;
    --black:#333;
    --white:#fff;
-   --green:green;
+   --green:#00a400;
    --dark-black:black;
    --bg-color:#eee;
    --dark-bg:rgba(0,0,0,.7);
@@ -180,7 +180,7 @@ html{
    display: block;
    width: 100%;
    text-align: center;
-   background-color: var(--blue);
+   background-color: var(--green);
    color:var(--white);
    font-size: 1.3rem;
    padding:1.2rem 3rem;
@@ -292,6 +292,11 @@ ul{
 
 
 
+/* MLOGO D */
+.logo {
+    display: flex; /* Menggunakan flexbox */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+}
 
 
 

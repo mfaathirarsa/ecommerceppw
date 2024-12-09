@@ -4,8 +4,10 @@
 :root{
    --blue:#2980b9;
    --red:tomato;
+   --red2:hwb(0 0% 18%);
+   --green:hsl(124, 100%, 35%);
    --orange:orange;
-   --black:#333;
+   --black:#6c6c6c;
    --dark-black:black;
    --white:#fff;
    --bg-color:#eee;
@@ -80,7 +82,7 @@ section{
    display: block;
    width: 100%;
    text-align: center;
-   background-color: var(--blue);
+   background-color: var(--dark-black);
    color:var(--white);
    font-size: 1.7rem;
    padding:1.2rem 3rem;
@@ -98,11 +100,11 @@ section{
 
 .delete-btn{
     margin-top: 0;
-    background-color: var(--red);
+    background-color: var(--red2);
 }
 
 .option-btn{
-    background-color: var(--orange);
+    background-color: var(--green);
 }
 
 
@@ -357,6 +359,14 @@ ul{
 .footer-col .social-links a:hover{
 	color: #24262b;
 	background-color: #ffffff;
+}
+
+
+
+/* MLOGO D */
+.logo {
+    display: flex; /* Menggunakan flexbox */
+    align-items: center; /* Menyelaraskan item secara vertikal */
 }
 
 
