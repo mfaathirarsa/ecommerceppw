@@ -1,6 +1,6 @@
 <!--============================== [BAGIAN PHP CODE] ==============================-->
 <?php
-/* ==========[BUAT MENGHUBUNGKAN KE (config.php)]========== */
+/* ==========[BUAT MENGHUBUNGKAN KE BAGIAN (config.php)]========== */
 @include 'config.php';
 
 
